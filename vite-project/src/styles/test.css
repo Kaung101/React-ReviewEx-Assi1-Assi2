@@ -1,0 +1,37 @@
+.list{
+    list-style-type: none;
+}
+.list a:hover{
+    color: red;
+}
+.list a, .list a:visited{
+    color: lightgreen;
+}
+.FavouriteSites{
+    margin: 20px;
+}
+.Profile{
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.Profile:hover{
+    border: 1px solid red;
+}
+.Profile:hover h2{
+    color: red;
+    transition: 1s;
+}
+.Gallery{
+    text-align: center;
+    align-items: center;
+}
+.Gallery ul{
+    padding: 0;
+}
+.Gallery img{
+    transition: transform 1s;
+}
+.Gallery img:hover{
+    transform: scale(1.2,1.2);
+}
