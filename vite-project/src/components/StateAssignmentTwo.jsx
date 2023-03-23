@@ -1,14 +1,20 @@
 import { useState } from "react";
 function StateAssignmentTwo() {
-    const [count, setCount] = useState(0);
-    const clickHandler = ()=>{setCount(count+1);};
+    const [numbers, setNumbers] = useState([]);
+    const handleClick = ()=>{
+        const randomNum = Math.floor(Math.random()*10);
+        setNumbers([...numbers, randomNum]);
+    };
     return (
-      <div>
-        <section className="StateAssignmentOne">
-            <button onClick={clickHandler}>Click me!</button>
-        </section>
-      </div>
-    )
+      <section>
+        <button onClick={handleClick}>Click me!</button>
+        <ul >
+            {numbers.map((number,index) => (
+                <li style={{ listStyleType: "none" , textAlign:"center"}} key ={index}>{number}</li>
+            ))}
+        </ul>
+      </section>
+    );
   }
   
-  export default StateAssignmentTwo
+  export default StateAssignmentTwo;
