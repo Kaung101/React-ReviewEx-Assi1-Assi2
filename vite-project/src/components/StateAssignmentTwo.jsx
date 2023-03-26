@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../styles/test.css';
 function StateAssignmentTwo() {
     const [numbers, setNumbers] = useState([]);
     const handleClick = ()=>{
@@ -6,11 +7,11 @@ function StateAssignmentTwo() {
         setNumbers([...numbers, randomNum]);
     };
     return (
-      <section>
+      <section className="StateAssignmentTwo">
         <button onClick={handleClick}>Click me!</button>
         <ul >
             {numbers.map((number,index) => (
-                <li style={{ listStyleType: "none" , textAlign:"center"}} key ={index}>{number}</li>
+                <li key ={index}>{number}</li>
             ))}
         </ul>
       </section>

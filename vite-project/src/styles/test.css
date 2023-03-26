@@ -35,3 +35,10 @@
 .Gallery img:hover{
     transform: scale(1.2,1.2);
 }
+.StateAssignmentTwo li{
+    list-style-type: none;
+}
+.StateAssignmentTwo ul{
+    text-align: center;
+    padding: 0;
+}
